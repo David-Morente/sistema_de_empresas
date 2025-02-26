@@ -1,6 +1,6 @@
 import { Router } from "express"
-import { getUserByIdValidator, updatePasswordValidator, updateUserValidator, deleteUserValidator } from "../middlewares/user-validator"
-import { getUserById, getUsers, updatePassword, updateUser, deleteUser  } from "./user.controller"
+import { getUserByIdValidator, updatePasswordValidator, updateUserValidator, deleteUserValidator } from "../middlewares/user-validator.js"
+import { getUserById, getUsers, updatePassword, updateUser, deleteUser} from "./user.controller.js"
 
 const router = Router()
 

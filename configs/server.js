@@ -8,6 +8,7 @@ import { dbConnection } from "./mongo.js"
 import authRoutes from "../src/auth/auth.routes.js"
 import usersRoutes from "../src/user/user.routes.js"
 import companyRoutes from "../src/company/company.routes.js"
+import apiLimiter from "../src/middlewares/validar-cant-peticiones.js"
 
 const middlewares = (app) => {
     app.use(express.urlencoded({extended: false}))

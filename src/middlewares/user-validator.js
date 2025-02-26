@@ -1,6 +1,6 @@
 import { body, param } from "express-validator"
-import { existEmail, userExist } from "../helpers/db-validator"
-import { validarCampos } from "./validar-campos"
+import { existEmail, userExist } from "../helpers/db-validator.js"
+import { validarCampos } from "./validar-campos.js"
 
 export const registerValidator = [
     body("name", "El nombre es obligatorio").not().isEmpty(),

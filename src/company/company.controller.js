@@ -1,10 +1,10 @@
-import Companys from "./company.model.js"
+import Company from "./company.model.js"
 
 export const registerCompany = async (req, res) => {
     try {
         const data = req.body
 
-        const company = await Companys.create(data)
+        const company = await Company.create(data)
         return res.status(201).json({
             message: "Empresa registrada",
             company

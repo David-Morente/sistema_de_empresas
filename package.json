@@ -11,6 +11,7 @@
   "author": "David Morente",
   "license": "ISC",
   "description": "Sistema de datos de empresas",
+  "type": "module",
   "dependencies": {
     "argon2": "^0.41.1",
     "cors": "^2.8.5",
