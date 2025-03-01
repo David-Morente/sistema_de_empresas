@@ -1,0 +1,121 @@
+[{
+  "_id": {
+    "$oid": "67c28a9e0ce5886f2bd225d8"
+  },
+  "name": "David",
+  "surname": "Morente",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$ZOesv34tfn5THUgt6naRQA$ZYIc+biE4Nzaq1v9Q1V+swS6nfbT3iQZ3H3O4D8xyec",
+  "email": "dmorente@gmail.com",
+  "role": "ADMIN_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c2926488696913cb416b28"
+  },
+  "name": "Carlos",
+  "surname": "Gomez",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$hnzlbCwMRFe52HQ3cLsKxw$gCuziwDNpxuzHTUYzVbyMrD3LOKe31L64SPcIFb35vQ",
+  "email": "carlosgomez@gmail.com",
+  "role": "ADMIN_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c2926c88696913cb416b2b"
+  },
+  "name": "Ana",
+  "surname": "Lopez",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$yqJiimhDzv9cUb+9c7xOww$OinVgcrA10PCY3xA3nbLElc8AwPGDUH39tcBepxiyEg",
+  "email": "anaperez@yahoo.com",
+  "role": "ADMIN_ROLE",
+  "status": false
+},
+{
+  "_id": {
+    "$oid": "67c2927388696913cb416b2e"
+  },
+  "name": "Luis",
+  "surname": "Sanchez",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$M/Mt0A2h9s025NkNGjrpOg$k2t4gIM3qrU+RoVEzykCyU5DqYDlcvXV+EHzqQUiOVQ",
+  "email": "luissanchez@outlook.com",
+  "role": "ADMIN_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c2927a88696913cb416b31"
+  },
+  "name": "Maria",
+  "surname": "Lopez",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$3pPEcDNAtpix/YEjGQ6ZsA$7MjNKxkMnLYdpOiERK6yW5vO1ENgrBjHrIkCpYzScYA",
+  "email": "marialopez@gmail.com",
+  "role": "ADMIN_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c2928188696913cb416b34"
+  },
+  "name": "Javier",
+  "surname": "Martinez",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$M9xxu2dEHiHS7ERezPY7Kw$MpXAwyQcsap27FgFpKs+5JtkvwhiiHtrUDqMi5dH7rM",
+  "email": "javiermartinez@aol.com",
+  "role": "ADMIN_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c2928b88696913cb416b37"
+  },
+  "name": "Sofia",
+  "surname": "Rodriguez",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$VhOFSF+h0RnZ333Tsn3Cxw$j+bidYD4jBJsOMOmh+xE8MMqwXp98hFGwsvAwT634JE",
+  "email": "sofiarodriguez@hotmail.com",
+  "role": "ADMIN_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c2929188696913cb416b3a"
+  },
+  "name": "Fernando",
+  "surname": "Fernandez",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$+SwaMiCyAHKx1ucLK43DHA$ftcvper/AKoTQ3N9Nk62/AE0yn5h2p/1R51W8ejTiwQ",
+  "email": "fernandofernandez@gmail.com",
+  "role": "ADMIN_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c2929788696913cb416b3d"
+  },
+  "name": "Isabel",
+  "surname": "Garcia",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$48X7syisB66Wp+kMxaI1KQ$SN+D3PPmHFX0pVcLyPBejz7HqF/1ai48O2fviobgwB0",
+  "email": "isabelgarcia@outlook.com",
+  "role": "ADMIN_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c2929f88696913cb416b40"
+  },
+  "name": "Pablo",
+  "surname": "Jimenez",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$m9PLMPnf6XQUvJ2imxLJWA$iSrhar7Ev0zDCiU08aBoXFFHjmViJ7P9v3LT2P2n5gA",
+  "email": "pablojimenez@gmail.com",
+  "role": "ADMIN_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c292a688696913cb416b43"
+  },
+  "name": "Elena",
+  "surname": "Martinez",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$s8qqmdkR+zIoV/rLvYDaBw$iEzn1d9Zrda3hS8XnYxVwiIWDbLG31df+kYtlkndWFg",
+  "email": "elenamartinez@yahoo.com",
+  "role": "ADMIN_ROLE",
+  "status": true
+}]

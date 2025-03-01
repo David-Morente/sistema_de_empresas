@@ -1,0 +1,422 @@
+{
+	"info": {
+		"_postman_id": "a7e83264-a409-426d-a0a8-41e8c02c83ec",
+		"name": "Api interfer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37219218"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Elena\",\r\n    \"surname\": \"Martinez\",\r\n    \"password\": \"elena4567\",\r\n    \"email\": \"elenamartinez@yahoo.com\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/systemCompany/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"systemCompany",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"dmorente@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/systemCompany/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"systemCompany",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"dmorente@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/systemCompany/v1/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"systemCompany",
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List user by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"dmorente@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/systemCompany/v1/user/findUser/67c2926c88696913cb416b2b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"systemCompany",
+								"v1",
+								"user",
+								"findUser",
+								"67c2926c88696913cb416b2b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update password",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"newPassword\": \"mypassword2\",\r\n    \"oldPassword\": \"mypassword1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/systemCompany/v1/user/updatePassword/67c2926c88696913cb416b2b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"systemCompany",
+								"v1",
+								"user",
+								"updatePassword",
+								"67c2926c88696913cb416b2b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"surname\":\"Lopez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/systemCompany/v1/user/updateUser/67c2926c88696913cb416b2b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"systemCompany",
+								"v1",
+								"user",
+								"updateUser",
+								"67c2926c88696913cb416b2b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"surname\":\"Lopez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/systemCompany/v1/user/deleteUser/67c2926c88696913cb416b2b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"systemCompany",
+								"v1",
+								"user",
+								"deleteUser",
+								"67c2926c88696913cb416b2b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Compañias",
+			"item": [
+				{
+					"name": "Register Company",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\": \"Innova Solutions\",\r\n    \"impactLevel\": \"Medio\",\r\n    \"trajectoryStart\": \"2020-06-05\",\r\n    \"category\": \"Otra categoría\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/systemCompany/v1/company/registerCompany",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"systemCompany",
+								"v1",
+								"company",
+								"registerCompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order company",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/systemCompany/v1/company/listCompany",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"systemCompany",
+								"v1",
+								"company",
+								"listCompany"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "A-Z",
+									"disabled": true
+								},
+								{
+									"key": "sortBy",
+									"value": "Z-A",
+									"disabled": true
+								},
+								{
+									"key": "sortBy",
+									"value": "category",
+									"disabled": true
+								},
+								{
+									"key": "sortBy",
+									"value": "years",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update company",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\": \"Innova Solutions\",\r\n    \"impactLevel\": \"Medio\",\r\n    \"trajectoryStart\": \"2020-06-05\",\r\n    \"category\": \"Educación\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/systemCompany/v1/company/editCompany/67c28c86d625b924256f6d6c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"systemCompany",
+								"v1",
+								"company",
+								"editCompany",
+								"67c28c86d625b924256f6d6c"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "A-Z",
+									"disabled": true
+								},
+								{
+									"key": "sortBy",
+									"value": "Z-A",
+									"disabled": true
+								},
+								{
+									"key": "sortBy",
+									"value": "category",
+									"disabled": true
+								},
+								{
+									"key": "sortBy",
+									"value": "years",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generate report company",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/systemCompany/v1/company/reportCompany",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"systemCompany",
+								"v1",
+								"company",
+								"reportCompany"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

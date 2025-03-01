@@ -9,6 +9,7 @@ import authRoutes from "../src/auth/auth.routes.js"
 import usersRoutes from "../src/user/user.routes.js"
 import companyRoutes from "../src/company/company.routes.js"
 import apiLimiter from "../src/middlewares/validar-cant-peticiones.js"
+import { swaggerDocs, swaggerUi } from "./swagger.js"
 
 const middlewares = (app) => {
     app.use(express.urlencoded({extended: false}))
@@ -34,9 +35,10 @@ const middlewares = (app) => {
 }
 
 const routes = (app) => {
-    app.use("/api/v1/auth", authRoutes)
-    app.use("/api/v1/user", usersRoutes)
-    app.use("/api/v1/company", companyRoutes)
+    app.use("/systemCompany/v1/auth", authRoutes)
+    app.use("/systemCompany/v1/user", usersRoutes)
+    app.use("/systemCompany/v1/company", companyRoutes)
+    app.use("/systemCompany/v1/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 }
 
 const conectarDB = async () => {

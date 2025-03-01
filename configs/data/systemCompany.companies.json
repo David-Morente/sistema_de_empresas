@@ -1,0 +1,132 @@
+[{
+  "_id": {
+    "$oid": "67c28c86d625b924256f6d6c"
+  },
+  "companyName": "Innova Solutions",
+  "impactLevel": "Medio",
+  "trajectoryStart": {
+    "$date": "2020-06-05T00:00:00.000Z"
+  },
+  "category": "Educación",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c28c95d625b924256f6d6e"
+  },
+  "companyName": "Salud Global",
+  "impactLevel": "Medio",
+  "trajectoryStart": {
+    "$date": "2021-06-15T00:00:00.000Z"
+  },
+  "category": "Salud",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c28c9ed625b924256f6d70"
+  },
+  "companyName": "Energia Verde",
+  "impactLevel": "Bajo",
+  "trajectoryStart": {
+    "$date": "2020-08-25T00:00:00.000Z"
+  },
+  "category": "Energía",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c28ca6d625b924256f6d72"
+  },
+  "companyName": "Finanzas 360",
+  "impactLevel": "Alto",
+  "trajectoryStart": {
+    "$date": "2019-05-12T00:00:00.000Z"
+  },
+  "category": "Finanzas",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c28cadd625b924256f6d74"
+  },
+  "companyName": "EducaPlus",
+  "impactLevel": "Medio",
+  "trajectoryStart": {
+    "$date": "2023-01-10T00:00:00.000Z"
+  },
+  "category": "Educación",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c28cb3d625b924256f6d76"
+  },
+  "companyName": "Comercio Global",
+  "impactLevel": "Bajo",
+  "trajectoryStart": {
+    "$date": "2018-11-30T00:00:00.000Z"
+  },
+  "category": "Comercio",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c28cbad625b924256f6d78"
+  },
+  "companyName": "Automotriz Nexus",
+  "impactLevel": "Alto",
+  "trajectoryStart": {
+    "$date": "2020-02-15T00:00:00.000Z"
+  },
+  "category": "Automotriz",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c28cc0d625b924256f6d7a"
+  },
+  "companyName": "EntertainHub",
+  "impactLevel": "Medio",
+  "trajectoryStart": {
+    "$date": "2021-09-05T00:00:00.000Z"
+  },
+  "category": "Entretenimiento",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c28cc7d625b924256f6d7c"
+  },
+  "companyName": "AgriTech Solutions",
+  "impactLevel": "Alto",
+  "trajectoryStart": {
+    "$date": "2019-07-25T00:00:00.000Z"
+  },
+  "category": "Agricultura",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c28cd0d625b924256f6d7e"
+  },
+  "companyName": "Logistics Express",
+  "impactLevel": "Bajo",
+  "trajectoryStart": {
+    "$date": "2017-12-19T00:00:00.000Z"
+  },
+  "category": "Logística",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c28cd7d625b924256f6d80"
+  },
+  "companyName": "Innova Solutions",
+  "impactLevel": "Medio",
+  "trajectoryStart": {
+    "$date": "2020-06-05T00:00:00.000Z"
+  },
+  "category": "Otra categoría",
+  "status": true
+}]

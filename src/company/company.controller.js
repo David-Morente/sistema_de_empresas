@@ -1,4 +1,11 @@
 import Company from "./company.model.js"
+import ExcelJS from "exceljs"
+import { fileURLToPath } from "url"
+import fs from "fs"
+import path from "path"
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 export const registerCompany = async (req, res) => {
     try {
@@ -41,7 +48,7 @@ export const orderCompany = async (req, res) => {
                 order = {};
         }
 
-        const listCompanies = await company.find().sort(order)
+        const listCompanies = await Company.find().sort(order)
 
         return res.status(200).json({
             message: "Empresas listadas con éxito",
@@ -73,6 +80,50 @@ export const updateCompany = async (req, res) => {
         res.status(500).json({
             succes: false,
             message: "Error al actualizar la empresa",
+            error: err.message
+        })
+    }
+}
+
+export const generateExcelCompanies = async (req, res) => {
+    try {
+        const obtain = await Company.find()
+        if (!obtain || obtain.length === 0) {
+            return res.status(404).json({
+                message: "Empresas no encontradas"
+            })
+        }
+
+        const workbook = new ExcelJS.Workbook()
+        const worksheet = workbook.addWorksheet("Empresas reporte")
+
+        worksheet.columns = [
+            { header: "Nombre de la Empresa", key: "companyName", width: 25 },
+            { header: "Nivel de Impacto", key: "impactLevel", width: 25 },
+            { header: "Fecha de Inicio", key: "trajectoryStart", width: 25 },
+            { header: "Categoría", key: "category", width: 30 }
+        ];
+
+        obtain.forEach(obtain => {
+            worksheet.addRow({
+                companyName: obtain.companyName,
+                impactLevel: obtain.impactLevel,
+                trajectoryStart: obtain.trajectoryStart.toISOString().split("T")[0], // Formato YYYY-MM-DD
+                category: obtain.category
+            });
+        })
+
+        const dir = path.join(__dirname, 'generar reportes');
+        if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir);
+        }
+
+        const filePath = path.join(dir, `empresas_reporte.xlsx`);
+        await workbook.xlsx.writeFile(filePath);
+    } catch (err) {
+        console.log(err.message)
+        return res.status(500).json({
+            message: "Error al generar el excel",
             error: err.message
         })
     }
