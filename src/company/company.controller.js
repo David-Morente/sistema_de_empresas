@@ -77,4 +77,3 @@ export const updateCompany = async (req, res) => {
         })
     }
 }
-
