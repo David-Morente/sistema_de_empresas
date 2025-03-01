@@ -1,4 +1,5 @@
 import User from "./user.model.js"
+import { hash, verify } from "argon2"
 
 export const getUserById = async(req, res) => {
     try{
@@ -31,7 +32,7 @@ export const getUserById = async(req, res) => {
 
 export const getUsers = async(req, res) => {
     try{
-        const { limits = 3, from = 0} = req.query
+        const { limits = 15, from = 0} = req.query
         const query = {status: true}
 
         const [ total, users ] = await Promise.all([
