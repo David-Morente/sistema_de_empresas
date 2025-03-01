@@ -11,7 +11,7 @@ const companySchema = Schema({
         required: [true, "Impact level is required"],
         enum: ["Alto", "Medio", "Bajo"]
     },
-    trajectory:{
+    trajectoryStart:{
         type: Date,
         required: true,
     },
